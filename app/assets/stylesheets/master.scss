@@ -1,5 +1,141 @@
 @import "bootstrap";
 
+/*In below example, the CSS property is clear: and the CSS selector is .clear*/
 .clear {
   clear: both;
+}
+
+body {
+  background: #000;
+}
+#Body path {
+  stroke: #00ff30;
+}
+#TopRed path {
+  stroke: #ff0000;
+}
+#Bottom_Blue path {
+  stroke: #00c6ff;
+}
+#Bottom_Green path {
+  stroke: #69e692;
+}
+#TopYellow path {
+  stroke: #fff000;
+}
+#BottomYellow path {
+  stroke: #fff000;
+}
+.st0{
+  /*fill:#8CC63F;*/
+  /*stroke: #8CC63F;*/
+  fill:none;
+  stroke:#FBB03B;
+  stroke-miterlimit:10;
+}
+.st1{
+  fill:none;
+  stroke:#8CC63F;
+  stroke-miterlimit:10;
+}
+.st2{
+  fill:none;
+  stroke:#FFFF00;
+  stroke-miterlimit:10;
+}
+.st3{
+  fill:#65C8D0;
+}
+.st4{
+  fill:#0000FF;
+}
+
+.butterfly {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -250px;
+  x: 0;
+  y: 0;
+  width: 500px;
+  height: 500px;
+  viewBox: 0 0 500 500;
+  enable-background:new 0 0 500 500;
+  animation: wrapper 4s infinite;
+}
+
+.st0 {
+    stroke-dasharray: 640;
+    stroke-dashoffset: 0;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-animation: draw-around 4s infinite;
+          animation: draw-around 4s infinite;
+}
+
+@-webkit-keyframes draw-around {
+  0% {
+    stroke-dashoffset: 640;
+  }
+  10% {
+    stroke-dashoffset: 640;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes draw-around {
+  0% {
+    stroke-dashoffset: 640;
+  }
+  10% {
+    stroke-dashoffset: 640;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes wrapper {
+  0% {
+    opacity: 0;
+    
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+  }
+  20% {
+    opacity: 1;
+    
+    -webkit-filter: none;
+    -moz-filter: none;
+    -o-filter: none;
+    -ms-filter: none;
+    filter: none;
+  }
+}
+
+@-webkit-keyframes wrapper {
+  0% {
+    opacity: 0;
+    
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+  }
+  20% {
+    opacity: 1;
+    
+    -webkit-filter: none;
+    -moz-filter: none;
+    -o-filter: none;
+    -ms-filter: none;
+    filter: none;
+  }
 }
