@@ -5,8 +5,9 @@
   clear: both;
 }
 
+/*body below was originially #000*/
 body {
-  background: #000;
+  background: white;
 }
 #Body path {
   stroke: #00ff30;
@@ -51,11 +52,12 @@ body {
 }
 
 .butterfly {
-  position: absolute;
+  /*position: absolute;*/
   top: 50%;
   left: 50%;
-  margin-top: -250px;
-  margin-left: -250px;
+  /*margin-top: -250px;
+  margin-left: -250px;*/
+  margin: auto;
   x: 0;
   y: 0;
   width: 500px;
@@ -138,4 +140,29 @@ body {
     -ms-filter: none;
     filter: none;
   }
+}
+
+.slogan {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-style: italic;
+  padding-top: 26px;
+}
+
+.links {
+  padding-top: 26px;
+}
+
+/*'.links a' so it matches ALL the links inside a link box:*/
+.links a {
+  color: black;
+  font-size: 25px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+header {
+  border-top: 9px solid #222222;
+}
+
+hr {
+  clear: both;
 }
